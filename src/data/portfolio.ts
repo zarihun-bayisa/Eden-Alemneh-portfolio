@@ -118,6 +118,22 @@ export const projectFilters = [
 
 export const projects: Project[] = [
   {
+    id: "uni-cash-reconciliation",
+    title: "Uni Cash Reconciliation",
+    description:
+      "A payment reconciliation workspace for comparing payment records, reviewing differences, and exporting clear reports.",
+    features: [
+      "Payment Record Comparison",
+      "Difference Review",
+      "Report Export",
+      "Secure Sign-In",
+    ],
+    tech: ["Next.js", "React"],
+    tags: ["React"],
+    github: "https://github.com/zarihun-bayisa/Uni-Cash-Reconciliation",
+    demo: "https://uni-cash-reconciliation-test.vercel.app/login",
+  },
+  {
     id: "maheber",
     title: "Maheber Management System",
     description:

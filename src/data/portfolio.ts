@@ -1,19 +1,15 @@
 import maheberImg from "@/assets/proj-maheber.jpg";
 import libraryImg from "@/assets/proj-library.jpg";
-import resumePdf from "@/assets/Zarihun_Bayisa_Gadisa_CV.pdf";
-import tempoPdf from "@/assets/tempo.pdf";
 
 export const profile = {
-  name: "Zarihun Bayisa Gadisa",
-  title: "Full-Stack Web Developer | Java & Spring Boot Developer",
+  name: "Eden Alemneh",
+  title: "Information Technology Graduate | Software Developer",
   intro:
-    "I am a passionate software developer who builds modern, scalable, and user-friendly web applications. I work across frontend and backend technologies and have experience building full-stack applications, REST APIs, microservices, database-driven systems, and modern React applications.",
-  github: "https://github.com/zarihun-bayisa?utm_source=chatgpt.com",
+    "I am an Information Technology graduate and software developer who builds modern, scalable, and user-friendly web applications. I work across frontend and backend technologies and have experience building full-stack applications, REST APIs, microservices, database-driven systems, and modern React applications.",
+  github: "https://github.com/eden-alemneh?utm_source=chatgpt.com",
   linkedin: "https://www.linkedin.com/in/",
-  email: "zarihunbayisa76@gmail.com",
-  phone: "+251982407645",
-  resume: resumePdf,
-  tempo: tempoPdf,
+  email: "Alemneheden7@gmail.com",
+  phone: "+251 90 958 1116",
   languages: ["English", "Amharic", "Afaan Oromo"],
 };
 
@@ -37,10 +33,10 @@ export const heroBadges = [
 ];
 
 export const stats = [
-  { value: "3.64", label: "CGPA" },
-  { value: "2024", label: "Graduation" },
   { value: "Full Stack", label: "Development" },
   { value: "Microservices", label: "Architecture" },
+  { value: "6+", label: "Projects" },
+  { value: "2024", label: "Graduate" },
 ];
 
 export const skillGroups = [
@@ -130,7 +126,7 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "React"],
     tags: ["React"],
-    github: "https://github.com/zarihun-bayisa/Uni-Cash-Reconciliation",
+    github: "https://github.com/eden-alemneh/Uni-Cash-Reconciliation",
     demo: "https://uni-cash-reconciliation-test.vercel.app/login",
   },
   {
@@ -158,7 +154,7 @@ export const projects: Project[] = [
       "Microservices",
     ],
     tags: ["Full Stack", "React", "Spring Boot", "Microservices"],
-    github: "https://github.com/zarihun-bayisa/maheber-management.git",
+    github: "https://github.com/eden-alemneh/maheber-management.git",
     image: maheberImg,
   },
   {
@@ -177,7 +173,7 @@ export const projects: Project[] = [
     ],
     tech: ["Java", "Spring Boot", "Spring Cloud", "Eureka", "Feign Client", "MySQL", "React"],
     tags: ["Full Stack", "Spring Boot", "Microservices", "React"],
-    github: "https://github.com/zarihun-bayisa/library-management-microservice.git",
+    github: "https://github.com/eden-alemneh/library-management-microservice.git",
     image: libraryImg,
   },
   {
@@ -245,10 +241,9 @@ export const process = [
 ];
 
 export const education = {
-  degree: "Bachelor of Computer Science",
+  degree: "Bachelor of Information Technology",
   school: "Arsi University",
   period: "2020 – 2024",
-  cgpa: "3.64",
 };
 
 export const architecture = [

@@ -105,7 +105,7 @@ export function Contact() {
                 icon={<Phone className="h-4.5 w-4.5" />}
                 label="Phone"
                 value={profile.phone}
-                href={`tel:${profile.phone}`}
+                href={`tel:${profile.phone.replace(/\s+/g, "")}`}
               />
               <ContactCard
                 icon={<Mail className="h-4.5 w-4.5" />}
@@ -116,7 +116,7 @@ export function Contact() {
               <ContactCard
                 icon={<Github className="h-4.5 w-4.5" />}
                 label="GitHub"
-                value="github.com/zarihun-bayisa"
+                value="github.com/eden-alemneh"
                 href={profile.github}
               />
               <ContactCard

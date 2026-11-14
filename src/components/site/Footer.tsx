@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="border-t border-border/60 py-10">
       <div className="mx-auto grid max-w-7xl gap-6 px-5 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center lg:px-8">
         <div className="min-w-0">
-          <p className="font-display text-sm font-semibold">Zarihun Bayisa Gadisa</p>
+          <p className="font-display text-sm font-semibold">{profile.name}</p>
           <p className="mt-1 text-xs text-muted-foreground">
-            Full-Stack Web Developer · © {new Date().getFullYear()}
+            {profile.title} · © {new Date().getFullYear()}
           </p>
           <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-1">
             {navItems.map((n) => (

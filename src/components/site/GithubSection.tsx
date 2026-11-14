@@ -28,7 +28,7 @@ export function GithubSection() {
                   <Github className="h-6 w-6" />
                 </span>
                 <div className="min-w-0">
-                  <p className="truncate font-display text-base font-semibold">zarihun-bayisa</p>
+                  <p className="truncate font-display text-base font-semibold">eden-alemneh</p>
                   <p className="truncate text-sm text-muted-foreground">
                     Full-Stack Developer · Ethiopia
                   </p>

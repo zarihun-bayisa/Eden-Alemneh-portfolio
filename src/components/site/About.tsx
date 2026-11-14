@@ -1,4 +1,4 @@
-import profileImg from "@/assets/graduation-photo.jpg";
+import { GraduationCap } from "lucide-react";
 import { profile, stats } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./Reveal";
 
@@ -16,14 +16,12 @@ export function About() {
               aria-hidden
               className="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-primary/15 blur-3xl"
             />
-            <img
-              src={profileImg}
-              alt="Zarihun Bayisa Gadisa at his graduation"
-              loading="lazy"
-              width={912}
-              height={1104}
-              className="relative aspect-[4/5] w-full rounded-3xl border border-border object-cover"
-            />
+            <div className="relative grid aspect-[4/5] w-full place-items-center rounded-3xl border border-border bg-surface text-center">
+              <div>
+                <GraduationCap aria-hidden className="mx-auto h-12 w-12 text-primary" />
+                <p className="mt-4 text-sm font-medium">Graduation photo coming soon</p>
+              </div>
+            </div>
           </div>
         </Reveal>
 
@@ -32,8 +30,8 @@ export function About() {
           <Reveal delay={80}>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a Computer Science graduate and software developer passionate about building
-                reliable, scalable, and intuitive software solutions.
+                I'm an Information Technology graduate and software developer passionate about
+                building reliable, scalable, and intuitive software solutions.
               </p>
               <p>
                 My experience spans frontend development, backend engineering, REST API

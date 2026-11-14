@@ -9,13 +9,12 @@ import { Process } from "@/components/site/Process";
 import { Education } from "@/components/site/Education";
 import { Architecture } from "@/components/site/Architecture";
 import { GithubSection } from "@/components/site/GithubSection";
-import { ResumeCta } from "@/components/site/ResumeCta";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const title = "Zarihun Bayisa — Full-Stack & Spring Boot Developer";
+const title = "Eden Alemneh — Information Technology Professional";
 const description =
-  "Portfolio of Zarihun Bayisa Gadisa, Full-Stack Web Developer building React, TypeScript, Java, Spring Boot, and microservice applications.";
+  "Portfolio of Eden Alemneh, Information Technology graduate and software developer building modern web applications.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,11 +34,11 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Zarihun Bayisa Gadisa",
-          jobTitle: "Full-Stack Web Developer",
+          name: "Eden Alemneh",
+          jobTitle: "Information Technology Professional",
           alumniOf: "Arsi University",
           knowsLanguage: ["English", "Amharic", "Afaan Oromo"],
-          sameAs: ["https://github.com/zarihun-bayisa"],
+          sameAs: ["https://github.com/eden-alemneh"],
         }),
       },
     ],
@@ -61,7 +60,6 @@ function Index() {
         <Education />
         <Architecture />
         <GithubSection />
-        <ResumeCta />
         <Contact />
       </main>
       <Footer />

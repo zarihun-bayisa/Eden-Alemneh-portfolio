@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Menu, Moon, Sun, X, FileText } from "lucide-react";
+import { Github, Linkedin, Menu, Moon, Sun, X } from "lucide-react";
 import { navItems, profile } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
@@ -51,10 +51,10 @@ export function Navbar() {
       >
         <a href="#home" className="flex min-w-0 items-center gap-2.5">
           <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary font-display text-sm font-bold text-primary-foreground">
-            ZB
+            EA
           </span>
           <span className="truncate font-display text-sm font-semibold tracking-tight sm:text-base">
-            Zarihun Bayisa
+            Eden Alemneh
           </span>
         </a>
 
@@ -89,14 +89,6 @@ export function Navbar() {
           >
             {light ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
           </button>
-          <a
-            href="/document?file=resume"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="ml-1 hidden items-center gap-2 rounded-lg bg-primary px-3.5 py-2 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5 sm:inline-flex"
-          >
-            <FileText className="h-4 w-4" /> View Resume
-          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -123,16 +115,6 @@ export function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="/document?file=resume"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-2 block rounded-lg bg-primary px-3 py-2.5 text-center text-sm font-medium text-primary-foreground"
-              >
-                View Resume
-              </a>
-            </li>
           </ul>
         </div>
       ) : null}

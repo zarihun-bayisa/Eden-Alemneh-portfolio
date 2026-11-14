@@ -1,24 +1,23 @@
-# Zarihun Bayisa Portfolio
+# Eden Alemneh Portfolio
 
 use react js  to build my portfolio
-Build a premium, modern, highly responsive personal portfolio website for a professional Full-Stack Web Developer / Software Developer.
+Build a premium, modern, highly responsive personal portfolio website for an Information Technology graduate and software developer.
 
 The website should feel like a high-end developer portfolio, not a generic template. Use a clean, sophisticated UI with excellent spacing, typography, animations, interactive elements, and strong visual hierarchy.
 
 👤 Developer Profile
 
-Name: Zarihun Bayisa Gadisa
+Name: Eden Alemneh
 
 Professional title:
-Full-Stack Web Developer | Java & Spring Boot Developer
+Information Technology Graduate | Software Developer
 
 Short introduction:
 I am a passionate software developer who builds modern, scalable, and user-friendly web applications. I work across frontend and backend technologies and have experience building full-stack applications, REST APIs, microservices, database-driven systems, and modern React applications.
 
 Education:
-Bachelor of Computer Science — Arsi University
+Bachelor of Information Technology — Arsi University
 Graduated: 2024
-CGPA: 3.64
 
 Languages:
 
@@ -106,8 +105,6 @@ Add:
 
 Dark/light mode toggle
 
-"View Resume" button
-
 GitHub icon
 
 LinkedIn icon
@@ -124,13 +121,11 @@ Building Digital Experiences That Solve Real Problems.
 
 Supporting text:
 
-I'm Zarihun Bayisa, a Full-Stack Web Developer specializing in React, TypeScript, Java, Spring Boot, REST APIs, PostgreSQL, and microservices.
+I'm Eden Alemneh, an Information Technology graduate and software developer specializing in React, TypeScript, Java, Spring Boot, REST APIs, PostgreSQL, and microservices.
 
 Add two primary buttons:
 
 View My Work
-Download Resume
-
 Add a secondary link:
 
 Let's Work Together →
@@ -162,7 +157,7 @@ About Me
 
 Content:
 
-"I'm a Computer Science graduate and software developer passionate about building reliable, scalable, and intuitive software solutions.
+"I'm an Information Technology graduate and software developer passionate about building reliable, scalable, and intuitive software solutions.
 
 My experience spans frontend development, backend engineering, REST API development, database design, and microservice architectures.
 
@@ -170,11 +165,8 @@ I enjoy turning real-world problems into practical software products and continu
 
 Add statistics/cards:
 
-3.64
-CGPA
-
 2024
-Graduation
+Graduate
 
 Full Stack
 Development
@@ -353,7 +345,7 @@ Technology:
 Java, Spring Boot, React, PostgreSQL, Spring Cloud, REST APIs, Microservices
 
 GitHub:
-https://github.com/zarihun-bayisa/maheber-management.git
+https://github.com/eden-alemneh/maheber-management.git
 
 2. Library Management Microservices
 
@@ -379,7 +371,7 @@ Technology:
 Java, Spring Boot, Spring Cloud, Eureka, Feign Client, MySQL, React
 
 GitHub:
-https://github.com/zarihun-bayisa/library-management-microservice.git
+https://github.com/eden-alemneh/library-management-microservice.git
 
 3. School Management System
 
@@ -446,12 +438,10 @@ Use animated cards connected by a subtle visual line.
 
 Create an elegant education timeline.
 
-Bachelor of Computer Science
+Bachelor of Information Technology
 
 Arsi University
 2020 – 2024
-
-CGPA: 3.64
 
 Include a graduation/certificate visual placeholder.
 
@@ -499,30 +489,11 @@ Contribution activity placeholder
 Technology statistics
 
 GitHub:
-https://github.com/zarihun-bayisa
+https://github.com/eden-alemneh
 
 Add a button:
 
 Visit GitHub →
-
-📄 RESUME SECTION
-
-Create a professional resume CTA.
-
-Title:
-
-Interested in working together?
-
-Text:
-
-"I'm currently open to opportunities where I can build meaningful software, solve challenging problems, and grow as a developer."
-
-Buttons:
-
-Download Resume
-Contact Me
-
-Make the resume button ready to connect to a /resume.pdf file later.
 
 📬 CONTACT SECTION
 
@@ -563,7 +534,7 @@ Do not expose API keys or sensitive credentials in frontend code.
 Add social icons throughout the website:
 
 GitHub:
-https://github.com/zarihun-bayisa
+https://github.com/eden-alemneh
 
 LinkedIn:
 Create a placeholder link that can easily be replaced later.

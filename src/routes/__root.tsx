@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "Zarihun Bayisa Gadisa" },
-      { property: "og:site_name", content: "Zarihun Bayisa" },
+      { name: "author", content: "Eden Alemneh" },
+      { property: "og:site_name", content: "Eden Alemneh" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0b0f12" },

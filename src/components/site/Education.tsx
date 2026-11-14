@@ -1,4 +1,4 @@
-import { Award, GraduationCap } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { education } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./Reveal";
 
@@ -26,9 +26,6 @@ export function Education() {
                       {education.period}
                     </span>
                   </div>
-                  <p className="mt-5 inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-3 py-1.5 text-sm text-primary">
-                    <Award className="h-4 w-4" /> CGPA {education.cgpa}
-                  </p>
                 </article>
               </li>
             </ol>
@@ -40,7 +37,7 @@ export function Education() {
                 <GraduationCap className="mx-auto h-10 w-10 text-primary" />
                 <p className="mt-4 font-display text-sm font-semibold">Graduated 2024</p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Certificate / graduation visual placeholder
+                  Information Technology · Arsi University
                 </p>
               </div>
             </div>

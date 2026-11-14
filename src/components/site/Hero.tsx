@@ -1,5 +1,5 @@
-import { ArrowRight, Download, FileText, Sparkles } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import { ArrowRight, Sparkles } from "lucide-react";
+import graduationImg from "@/assets/eden.jpg";
 import { heroBadges, profile } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -30,8 +30,9 @@ export function Hero() {
 
           <Reveal delay={160}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I'm Zarihun Bayisa, a Full-Stack Web Developer specializing in React, TypeScript,
-              Java, Spring Boot, REST APIs, PostgreSQL, and microservices.
+              I'm Eden Alemneh, an Information Technology graduate and software developer
+              specializing in React, TypeScript, Java, Spring Boot, REST APIs, PostgreSQL, and
+              microservices.
             </p>
           </Reveal>
 
@@ -42,22 +43,6 @@ export function Hero() {
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-18px_var(--color-glow)]"
               >
                 View My Work <ArrowRight className="h-4 w-4" />
-              </a>
-              <a
-                href="/document?file=resume"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold transition-colors hover:border-primary/50 hover:text-primary"
-              >
-                <Download className="h-4 w-4" /> Download Resume
-              </a>
-              <a
-                href="/document?file=tempo"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-5 py-3 text-sm font-semibold transition-colors hover:border-primary/50 hover:text-primary"
-              >
-                <FileText className="h-4 w-4" /> View Tempo
               </a>
               <a
                 href="#contact"
@@ -87,8 +72,8 @@ export function Hero() {
           <div className="mx-auto max-w-[480px]">
             <div className="glow-ring relative overflow-hidden rounded-[24px] border border-border bg-surface-2/60 p-1.5 shadow-[0_0_50px_rgba(34,211,238,0.08)] sm:rounded-[28px] sm:p-2">
               <img
-                src={profileImg}
-                alt="Portrait of Zarihun Bayisa Gadisa"
+                src={graduationImg}
+                alt="Eden Alemneh graduation portrait"
                 width={1200}
                 height={1200}
                 className="aspect-square w-full rounded-[18px] object-cover object-center sm:rounded-[20px]"
@@ -106,7 +91,7 @@ export function Hero() {
               </div>
               <div>
                 <p className="font-display text-base font-semibold sm:text-lg">2024</p>
-                <p className="mt-0.5 text-[10px] text-muted-foreground sm:text-xs">BSc CS</p>
+                <p className="mt-0.5 text-[10px] text-muted-foreground sm:text-xs">BSc IT</p>
               </div>
             </div>
           </div>

@@ -1,12 +1,14 @@
 import maheberImg from "@/assets/proj-maheber.jpg";
 import libraryImg from "@/assets/proj-library.jpg";
+import trafficImg from "@/assets/traffic .png";
+import uniCashImg from "@/assets/unicash.png";
 
 export const profile = {
   name: "Eden Alemneh",
   title: "Information Technology Graduate | Software Developer",
   intro:
     "I am an Information Technology graduate and software developer who builds modern, scalable, and user-friendly web applications. I work across frontend and backend technologies and have experience building full-stack applications, REST APIs, microservices, database-driven systems, and modern React applications.",
-  github: "https://github.com/eden-alemneh?utm_source=chatgpt.com",
+  github: "https://github.com/zarihun-bayisa",
   linkedin: "https://www.linkedin.com/in/",
   email: "Alemneheden7@gmail.com",
   phone: "+251 90 958 1116",
@@ -18,6 +20,7 @@ export const navItems = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
+  { label: "Resume", href: "#resume" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
@@ -35,7 +38,7 @@ export const heroBadges = [
 export const stats = [
   { value: "Full Stack", label: "Development" },
   { value: "Microservices", label: "Architecture" },
-  { value: "6+", label: "Projects" },
+  { value: "12+", label: "Projects" },
   { value: "2024", label: "Graduate" },
 ];
 
@@ -77,15 +80,15 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: "Customer Support Officer",
-    company: "Atlas Computer Technology PLC",
+    role: "IT Support Officer",
+    company: "Ethiopian Railways Corporation (ERC)",
     period: "2025 – Present",
     points: [
-      "Providing technical and customer support",
-      "Troubleshooting software and hardware issues",
-      "Assisting users with technical problems",
-      "Data entry and documentation",
-      "Supporting day-to-day IT operations",
+      "Maintaining IT, communication, and digital systems across railway offices and stations",
+      "Troubleshooting hardware, software, and network issues",
+      "Providing technical support to railway staff",
+      "Supporting the reliable operation of station and administrative technology",
+      "Documenting support requests and IT operations",
     ],
   },
 ];
@@ -114,6 +117,40 @@ export const projectFilters = [
 
 export const projects: Project[] = [
   {
+    id: "traffic-management",
+    title: "Traffic Management System",
+    description:
+      "A dashboard for managing vehicle fleets, drivers, traffic cameras, violations, and penalty payments.",
+    features: [
+      "Vehicle and Driver Management",
+      "Traffic Camera Monitoring",
+      "Violation Tracking",
+      "Penalty Payments",
+      "Agreements and Reports",
+      "Python-Based Traffic Event Detection",
+    ],
+    tech: ["Next.js", "React", "Python", "Bootstrap"],
+    tags: ["Full Stack", "React"],
+    github: "https://github.com/zarihun-bayisa/traffic-management",
+    image: trafficImg,
+  },
+  {
+    id: "insurance-management",
+    title: "Insurance Management System",
+    description:
+      "A full-stack insurance platform for managing clients, policies, premium payments, claims, and agents.",
+    features: [
+      "Client and Agent Management",
+      "Insurance Policy Management",
+      "Premium Payments",
+      "Claims Processing",
+      "Dashboard and Reports",
+    ],
+    tech: ["Java", "Spring Boot", "React", "Vite", "Bootstrap"],
+    tags: ["Full Stack", "React", "Spring Boot"],
+    github: "https://github.com/zarihun-bayisa/Insurance-mangement",
+  },
+  {
     id: "uni-cash-reconciliation",
     title: "Uni Cash Reconciliation",
     description:
@@ -126,8 +163,9 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "React"],
     tags: ["React"],
-    github: "https://github.com/eden-alemneh/Uni-Cash-Reconciliation",
+    github: "https://github.com/zarihun-bayisa/Uni-Cash-Reconciliation",
     demo: "https://uni-cash-reconciliation-test.vercel.app/login",
+    image: uniCashImg,
   },
   {
     id: "maheber",
@@ -154,7 +192,7 @@ export const projects: Project[] = [
       "Microservices",
     ],
     tags: ["Full Stack", "React", "Spring Boot", "Microservices"],
-    github: "https://github.com/eden-alemneh/maheber-management.git",
+    github: "https://github.com/zarihun-bayisa/maheber-management",
     image: maheberImg,
   },
   {
@@ -173,7 +211,7 @@ export const projects: Project[] = [
     ],
     tech: ["Java", "Spring Boot", "Spring Cloud", "Eureka", "Feign Client", "MySQL", "React"],
     tags: ["Full Stack", "Spring Boot", "Microservices", "React"],
-    github: "https://github.com/eden-alemneh/library-management-microservice.git",
+    github: "https://github.com/zarihun-bayisa/library-management-microservice",
     image: libraryImg,
   },
   {
@@ -183,6 +221,7 @@ export const projects: Project[] = [
       "A full-stack school management application designed to manage students, academic information, and school operations.",
     tech: ["Spring Boot", "Java", "MySQL", "REST API", "React"],
     tags: ["Full Stack", "Spring Boot", "React"],
+    github: "https://github.com/zarihun-bayisa/spring-boot-school",
   },
   {
     id: "realestate",
@@ -191,6 +230,7 @@ export const projects: Project[] = [
       "A web-based real estate application for managing properties and property-related information.",
     tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
     tags: ["Full Stack"],
+    github: "https://github.com/zarihun-bayisa/real-state",
   },
   {
     id: "hotel",
@@ -199,6 +239,7 @@ export const projects: Project[] = [
       "A management system designed to support hotel operations and record management.",
     tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
     tags: ["Full Stack"],
+    github: "https://github.com/zarihun-bayisa/hotel-management",
   },
   {
     id: "prison",
@@ -214,6 +255,7 @@ export const projects: Project[] = [
     ],
     tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
     tags: ["Full Stack"],
+    github: "https://github.com/zarihun-bayisa/prison-management-final-project",
   },
   {
     id: "pcb",
@@ -221,6 +263,7 @@ export const projects: Project[] = [
     description: "An interactive web application for visualizing PCB designs in 3D.",
     tech: ["React", "Three.js", "JavaScript"],
     tags: ["React"],
+    github: "https://github.com/zarihun-bayisa/threejs-pcb-viewer",
   },
   {
     id: "mobile",

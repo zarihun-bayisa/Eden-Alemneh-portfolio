@@ -82,7 +82,7 @@ export function Hero() {
 
             <div className="mt-3 grid grid-cols-3 rounded-[20px] border border-border bg-surface px-3 py-3 text-center sm:mt-4 sm:rounded-[22px] sm:px-5 sm:py-4">
               <div>
-                <p className="font-display text-base font-semibold sm:text-lg">14+</p>
+                <p className="font-display text-base font-semibold sm:text-lg">12+</p>
                 <p className="mt-0.5 text-[10px] text-muted-foreground sm:text-xs">Projects</p>
               </div>
               <div className="border-x border-border px-2">

@@ -1,17 +1,19 @@
 import { useMemo, useState } from "react";
-import { ArrowUpRight, Github, Smartphone, X } from "lucide-react";
+import { ArrowUpRight, ChevronDown, ChevronUp, Github, Smartphone, X } from "lucide-react";
 import { projectFilters, projects, type Project } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 import { Reveal, SectionHeading } from "./Reveal";
 
 export function Projects() {
   const [filter, setFilter] = useState("All");
+  const [showAll, setShowAll] = useState(false);
   const [detail, setDetail] = useState<Project | null>(null);
 
   const visible = useMemo(
     () => (filter === "All" ? projects : projects.filter((p) => p.tags.includes(filter))),
     [filter],
   );
+  const displayedProjects = showAll ? visible : visible.slice(0, 4);
 
   return (
     <section id="projects" className="relative border-t border-border/60 py-24">
@@ -30,7 +32,10 @@ export function Projects() {
                 type="button"
                 role="tab"
                 aria-selected={filter === f}
-                onClick={() => setFilter(f)}
+                onClick={() => {
+                  setFilter(f);
+                  setShowAll(false);
+                }}
                 className={cn(
                   "rounded-lg border px-3.5 py-2 text-sm transition-colors",
                   filter === f
@@ -44,8 +49,8 @@ export function Projects() {
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          {visible.map((project, i) => (
+        <div id="project-grid" className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {displayedProjects.map((project, i) => (
             <Reveal as="article" key={project.id} delay={i * 60} className="h-full">
               <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[0_30px_70px_-45px_var(--color-glow)]">
                 <div className="relative aspect-[3/2] overflow-hidden border-b border-border bg-surface-2">
@@ -113,6 +118,21 @@ export function Projects() {
             </Reveal>
           ))}
         </div>
+
+        {visible.length > 4 ? (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              aria-controls="project-grid"
+              aria-expanded={showAll}
+              onClick={() => setShowAll((current) => !current)}
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+            >
+              {showAll ? "Show fewer projects" : `View all ${visible.length} projects`}
+              {showAll ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+          </div>
+        ) : null}
       </div>
 
       {detail ? <DetailModal project={detail} onClose={() => setDetail(null)} /> : null}

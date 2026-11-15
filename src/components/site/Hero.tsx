@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/female_silhouette.jpg";
 import { heroBadges, profile } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -73,7 +73,7 @@ export function Hero() {
             <div className="glow-ring relative overflow-hidden rounded-[24px] border border-border bg-surface-2/60 p-1.5 shadow-[0_0_50px_rgba(34,211,238,0.08)] sm:rounded-[28px] sm:p-2">
               <img
                 src={profileImg}
-                alt="Eden Alemneh profile portrait"
+                alt="Eden Alemneh in a female silhouette portrait"
                 width={1200}
                 height={1200}
                 className="aspect-square w-full rounded-[18px] object-cover object-center sm:rounded-[20px]"

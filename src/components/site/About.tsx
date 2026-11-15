@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import graduationImg from "@/assets/eden.jpg";
 import { profile, stats } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./Reveal";
 
@@ -16,11 +16,12 @@ export function About() {
               aria-hidden
               className="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-primary/15 blur-3xl"
             />
-            <div className="relative grid aspect-[4/5] w-full place-items-center rounded-3xl border border-border bg-surface text-center">
-              <div>
-                <GraduationCap aria-hidden className="mx-auto h-12 w-12 text-primary" />
-                <p className="mt-4 text-sm font-medium">Graduation photo coming soon</p>
-              </div>
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
+              <img
+                src={graduationImg}
+                alt="Eden Alemneh graduation photo"
+                className="aspect-[4/5] w-full object-cover object-center"
+              />
             </div>
           </div>
         </Reveal>
